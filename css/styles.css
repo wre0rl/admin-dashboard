@@ -1,6 +1,7 @@
 :root {
   --spacing: .9rem;
   --title-spacing: .5rem;
+  --menu-spacing: 2rem;
   --border-width: 1px;
   --border-color: black;
 }
@@ -29,6 +30,22 @@ body {
   width: 200px;
   border-right: var(--border-width) solid var(--border-color);
   padding: var(--spacing);
+}
+
+.sidebar__menu {
+  padding: var(--menu-spacing);
+}
+
+.sidebar__menu-item:nth-child(3) {
+  margin-bottom: var(--menu-spacing);
+}
+
+.sidebar__menu-item:nth-child(5) {
+  margin-top: var(--menu-spacing);
+}
+
+.sidebar__menu-item {
+  margin-bottom: .7rem;
 }
 
 .main {
