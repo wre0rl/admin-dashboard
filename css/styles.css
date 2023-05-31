@@ -88,16 +88,21 @@ body {
   padding: var(--spacing);
 }
 
-.aside__item {
-  margin-bottom: var(--spacing);
-}
-
-.aside__item-title {
+.aside__title {
   margin-bottom: var(--title-spacing);
 }
 
-.aside__item-content {
+.aside__item {
+  margin-bottom: var(--spacing);
   padding: var(--spacing);
   border: var(--border-width) solid var(--border-color);
+}
+
+.aside__item-title {
+  font-size: .9rem;
+}
+
+.aside__item-content {  
+  font-size: .8rem;
   font-weight: 300;
 }
