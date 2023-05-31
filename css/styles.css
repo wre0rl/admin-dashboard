@@ -31,8 +31,14 @@ body {
   background-color: #fff;
 }
 
-.header__title {
-  font-size: 1.3rem;
+.header__search-input {
+  font-size: 1rem;
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+
+.header__search-input:focus {
+  outline: none;
 }
 
 .sidebar {
