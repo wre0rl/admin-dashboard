@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
 :root {
   --spacing: .9rem;
   --title-spacing: .5rem;
   --menu-spacing: 2rem;
   --border-width: 1px;
   --border-color: black;
+}
+
+* {
+  font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -46,6 +52,11 @@ body {
 
 .sidebar__menu-item {
   margin-bottom: .7rem;
+  font-weight: 300;
+}
+
+.active {
+  font-weight: 400;
 }
 
 .main {
@@ -59,7 +70,7 @@ body {
 
 .main__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: var(--spacing);
 }
 
@@ -67,6 +78,10 @@ body {
   border: var(--border-width) solid var(--border-color);
   border-left-width: .3rem;
   padding: var(--spacing);
+}
+
+.main__item-content {
+  font-weight: 300;
 }
 
 .aside {
@@ -84,4 +99,5 @@ body {
 .aside__item-content {
   padding: var(--spacing);
   border: var(--border-width) solid var(--border-color);
+  font-weight: 300;
 }
