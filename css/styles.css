@@ -1,0 +1,70 @@
+:root {
+  --spacing: .9rem;
+  --title-spacing: .5rem;
+  --border-width: 1px;
+  --border-color: black;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin-left: 230px;
+  grid-column: 1 / 3;
+  padding: var(--spacing);
+  position: sticky;
+  top: 0;
+  border-bottom: var(--border-width) solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 200px;
+  border-right: var(--border-width) solid var(--border-color);
+  padding: var(--spacing);
+}
+
+.main {
+  margin-left: 230px;
+  padding: var(--spacing);
+}
+
+.main__title {
+  margin-bottom: var(--title-spacing);
+}
+
+.main__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: var(--spacing);
+}
+
+.main__item {
+  border: var(--border-width) solid var(--border-color);
+  border-left-width: .3rem;
+  padding: var(--spacing);
+}
+
+.aside {
+  padding: var(--spacing);
+}
+
+.aside__item {
+  margin-bottom: var(--spacing);
+}
+
+.aside__item-title {
+  margin-bottom: var(--title-spacing);
+}
+
+.aside__item-content {
+  padding: var(--spacing);
+  border: var(--border-width) solid var(--border-color);
+}
