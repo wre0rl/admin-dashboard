@@ -83,10 +83,14 @@ body {
   border: var(--border-width) solid var(--border-color);
   border-left-width: .3rem;
   padding: var(--spacing);
+  box-shadow: 8px 8px 0 -4px gold, 8px 8px 0 0 black;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .main__item-content {
   font-weight: 300;
+  line-height: 1.5rem;
 }
 
 .aside {
@@ -101,6 +105,24 @@ body {
   margin-bottom: var(--spacing);
   padding: var(--spacing);
   border: var(--border-width) solid var(--border-color);
+  box-shadow: 8px 8px 0 -4px pink, 8px 8px 0 0 black;
+}
+
+.aside__item-wrapper {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.aside__item-wrapper.trending {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside__item-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: var(--border-width) solid var(--border-color);
 }
 
 .aside__item-title {
@@ -110,6 +132,7 @@ body {
 .aside__item-content {  
   font-size: .8rem;
   font-weight: 300;
+  line-height: 1.2rem;
 }
 
 button {
